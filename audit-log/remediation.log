@@ -1,0 +1,14 @@
+{"time": "2026-06-11T23:43:08.641030", "action": "block_ip", "target": "10.0.2.99", "result": "blocked", "rollback": "iptables -D INPUT -s 10.0.2.99 -j DROP"}
+{"time": "2026-06-11T23:43:23.427071", "action": "disable_user", "target": "labuser", "result": "disabled", "rollback": "usermod -U labuser"}
+{"time": "2026-06-11T23:56:59.314198", "action": "disable_user", "target": "ntpsec", "result": "disabled", "rollback": "usermod -U ntpsec"}
+{"time": "2026-06-11T23:56:59.196287", "action": "disable_user", "target": "ntpsec", "ai_summary": "[AI Summary] Level 8 alert on kali: New user added to the system.", "status": "SUCCESS", "response": "{\"rollback\":\"usermod -U ntpsec\",\"status\":\"success\"}\n"}
+{"time": "2026-06-12T10:12:26.582458", "action": "disable_user", "target": "testuser99", "result": "disabled", "rollback": "usermod -U testuser99"}
+{"time": "2026-06-12T10:12:26.060594", "action": "disable_user", "target": "testuser99", "ai_summary": "[AI Summary] Level 8 alert on kali: New user added to the system.", "status": "SUCCESS", "response": "{\"rollback\":\"usermod -U testuser99\",\"status\":\"success\"}\n"}
+{"time": "2026-06-12T10:32:54.484955", "action": "disable_user", "target": "ntpsec", "result": "disabled", "rollback": "usermod -U ntpsec"}
+{"time": "2026-06-12T10:32:54.359492", "action": "disable_user", "target": "ntpsec", "ai_summary": "[AI Summary] Level 8 alert on kali: New user added to the system.", "status": "SUCCESS", "response": "{\"rollback\":\"usermod -U ntpsec\",\"status\":\"success\"}\n"}
+{"time": "2026-06-12T10:32:54.517433", "action": "disable_user", "target": "testuser99", "result": "disabled", "rollback": "usermod -U testuser99"}
+{"time": "2026-06-12T10:32:54.511721", "action": "disable_user", "target": "testuser99", "ai_summary": "[AI Summary] Level 8 alert on kali: New user added to the system.", "status": "SUCCESS", "response": "{\"rollback\":\"usermod -U testuser99\",\"status\":\"success\"}\n"}
+{"time": "2026-06-12T10:37:44.881551", "action": "disable_user", "target": "ntpsec", "result": "disabled", "rollback": "usermod -U ntpsec"}
+{"time": "2026-06-12T10:37:44.843372", "action": "disable_user", "target": "ntpsec", "ai_summary": "[AI Summary] Level 8 alert on kali: New user added to the system.", "status": "SUCCESS", "response": "{\"rollback\":\"usermod -U ntpsec\",\"status\":\"success\"}\n"}
+{"time": "2026-06-12T10:37:44.912418", "action": "disable_user", "target": "testuser99", "result": "disabled", "rollback": "usermod -U testuser99"}
+{"time": "2026-06-12T10:37:44.893416", "action": "disable_user", "target": "testuser99", "ai_summary": "[AI Summary] Level 8 alert on kali: New user added to the system.", "status": "SUCCESS", "response": "{\"rollback\":\"usermod -U testuser99\",\"status\":\"success\"}\n"}

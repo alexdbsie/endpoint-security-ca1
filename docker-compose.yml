@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  alert-processor:
+    build: ./alert-processor
+    container_name: alert-processor
+    volumes:
+      - /var/ossec/logs/alerts:/wazuh-alerts:ro
+      - ./audit-log:/audit-log
+    environment:
+      - WAZUH_ALERT_FILE=/wazuh-alerts/alerts.json
+      - AUDIT_LOG=/audit-log/remediation.log
+    networks:
+      - security-net
+    restart: unless-stopped
+
+  remediation-engine:
+    build: ./remediation-engine
+    container_name: remediation-engine
+    ports:
+      - "5000:5000"
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - ./audit-log:/audit-log
+      - ./allowlist.json:/app/allowlist.json:ro
+    networks:
+      - security-net
+    restart: unless-stopped
+
+networks:
+  security-net:
+    driver: bridge
